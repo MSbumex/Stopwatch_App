@@ -1,36 +1,33 @@
-# Stopwatch App
+# Stopwatch App 
 
-## Objective
-Build a functional stopwatch using **HTML, CSS, and JavaScript**.  
-This project tests your ability to structure a webpage, style it, and add interactive logic with JavaScript.
+
+## Overview
+A functional **Stopwatch application** built using **HTML, CSS, and JavaScript**.  
+Tracks time in hours, minutes, seconds, and milliseconds, with **Start**, **Stop**, **Reset**, and **Light/Dark theme toggle** functionality.  
+Responsive design makes it mobile-friendly and easy to use.
+
+---
 
 ## Features
-- Display elapsed time in **hours, minutes, seconds, and milliseconds**.
-- **Start**, **Stop**, and **Reset** buttons to control the stopwatch.
-- **Light/Dark theme toggle** for better user experience.
-- **Responsive design** for mobile devices.
+- Display time in **hh:mm:ss.ms** format.  
+- **Start**, **Stop**, and **Reset** controls.  
+- **Light/Dark mode toggle** for better UX.  
+- Fully **responsive design** for various screen sizes.  
+- Optional bonus: Lap button (can be added later).
 
-## Project Requirements
+---
 
-### HTML
-- Create a display area to show the timer.
-- Add buttons: **Start**, **Stop**, **Reset**.
+## Project Structure
+Stopwatch-App/
+── index.html # HTML structure of the stopwatch
+── main.css # Styling (light/dark theme and responsive design)
+── main.js # Stopwatch logic (start, stop, reset, theme toggle)
+── README.md # Project documentation
 
-### CSS
-- Center the stopwatch container.
-- Style the timer display like a digital clock.
-- Style buttons with hover effects.
-- Make layout responsive using **Flexbox** or **Grid**.
+## Technologies Used
+- **HTML5** – Structure of the app.  
+- **CSS3** – Styling, responsive design, and theme toggle.  
+- **JavaScript (ES6)** – Stopwatch logic and interactivity.
 
-### JavaScript
-- Implement stopwatch logic using `setInterval()`.
-- Prevent multiple timers from starting simultaneously.
-- Update display in **hh:mm:ss.ms** format.
-- Handle **Start**, **Stop**, **Reset**, and **Theme toggle** actions.
-
-
-
-## Deliverables
-- Clean, readable **HTML**, **CSS**, and **JS** files.
-
-
+## Author
+**Moshood Owolabi** – Designed and developed this stopwatch app.
