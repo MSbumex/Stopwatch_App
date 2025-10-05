@@ -11,6 +11,7 @@
 /* ====== BODY ====== */
 body{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -29,8 +30,8 @@ body{
   align-items: center;
   text-align: center;
   background: #e62d2d;
-  height: 50vh;
-  width: 50vw;
+  height: 65vh;
+  width: 65vw;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(116, 78, 78, 0.846);
@@ -90,6 +91,20 @@ body.dark button {
 body.dark button:hover {
   background-color: #ffdd33;
 }
+
+
+/* ====== FOOTER DESIGN ====== */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #333; /* Adjust for dark/light theme */
+}
+body.dark .footer {
+  color: #f5f5f5;
+}
+
+
 
 
 
