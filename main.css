@@ -14,6 +14,7 @@ body{
   background-color: #121212;
   color: white;
   margin: 0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Stopwatch container */
@@ -31,9 +32,16 @@ body{
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+
 /* Timer display */
 .display-timer {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin: 20px 0;
   font-weight: bold;
   letter-spacing: 2px;
@@ -56,14 +64,61 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Responsive design */
+/* Lap list */
+#laps {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  text-align: left;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#laps li {
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+
+/* Light theme */
+body.light {
+  background-color: #f5f5f5;
+  color: #121212;
+}
+
+body.light .main-container {
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+body.light button {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.light button:hover {
+  background-color: #333333;
+}
+
+
+/* Responsive */
 @media (max-width: 600px) {
-  #display-timer {
+  .display-timer {
     font-size: 2rem;
   }
+
   button {
-    padding: 10px 18px;
+    padding: 8px 14px;
     font-size: 0.9rem;
   }
+
+  .main-container {
+    width: 90%;
+  }
 }
+
+
 
