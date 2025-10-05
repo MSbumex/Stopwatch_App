@@ -1,19 +1,20 @@
 
-// Time variables
+// ===== TIME VARIABLES =====
+
 let hours = 0, minutes = 0, seconds = 0, milliseconds = 0, timer = null, timerRunning = false;
 
 
-// Select elements using querySelector
-const display = document.querySelector(".display-timer");
-const startBtn = document.querySelector("#start");
-const stopBtn = document.querySelector("#stop");
-const resetBtn = document.querySelector("#reset");
-const themeToggle = document.getElementById("themeToggle");
+/// ===== SELECT DOM ELEMENTS =====
+const display = document.querySelector(".display-timer"); // Timer display area
+const startBtn = document.querySelector("#start");       // Start button
+const stopBtn = document.querySelector("#stop");         // Stop button
+const resetBtn = document.querySelector("#reset");       // Reset button
+const themeToggle = document.getElementById("themeToggle"); // Theme toggle button
 
 
 
-
-// Update display function
+// ===== UPDATE DISPLAY FUNCTION =====
+// Updates the timer display with the current time values
 function updateDisplay() {
   const h = String(hours).padStart(2, "0");
   const m = String(minutes).padStart(2, "0");
@@ -24,7 +25,8 @@ function updateDisplay() {
 
 
 
-// Start button
+// ===== START BUTTON =====
+// Starts the stopwatch if it is not already running
 startBtn.addEventListener("click", () => {
   if (!timerRunning) {
     timerRunning = true;
@@ -38,13 +40,15 @@ startBtn.addEventListener("click", () => {
   }
 });
 
-// Stop button
+// ===== STOP BUTTON =====
+// Stops the stopwatch
 stopBtn.addEventListener("click", () => {
   clearInterval(timer);
   timerRunning = false;
 });
 
-// Reset button
+// ===== RESET BUTTON =====
+// Resets the stopwatch to 00:00:00.000
 resetBtn.addEventListener("click", () => {
   clearInterval(timer);
   timerRunning = false;
@@ -53,10 +57,14 @@ resetBtn.addEventListener("click", () => {
 });
 
 
-// Theme toggle
+// ===== THEME TOGGLE BUTTON =====
+// Switches between light and dark mode
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
+  themeToggle.textContent = document.body.classList.contains("dark") ? "Light Mode" : "Dark Mode";
 });
 
-// Initialize
+
+// ===== INITIALIZE =====
+// Sets the initial display when the page loads
 updateDisplay();
