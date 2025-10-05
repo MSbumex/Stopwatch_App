@@ -13,21 +13,21 @@ Responsive design makes it mobile-friendly and easy to use.
 - **Start**, **Stop**, and **Reset** controls.  
 - **Light/Dark mode toggle** for better UX.  
 - Fully **responsive design** for various screen sizes.  
-- Optional bonus: Lap button (can be added later).
+-  Lap button (can be added later).
 
 ---
 
 ## Project Structure
 Stopwatch-App/
-── index.html # HTML structure of the stopwatch
-── main.css # Styling (light/dark theme and responsive design)
-── main.js # Stopwatch logic (start, stop, reset, theme toggle)
-── README.md # Project documentation
+- ── index.html # HTML structure of the stopwatch
+- ── main.css # Styling (light/dark theme and responsive design)
+- ── main.js # Stopwatch logic (start, stop, reset, theme toggle)
+- ── README.md # Project documentation
 
 ## Technologies Used
 - **HTML5** – Structure of the app.  
 - **CSS3** – Styling, responsive design, and theme toggle.  
-- **JavaScript (ES6)** – Stopwatch logic and interactivity.
+- **JavaScript** – Stopwatch logic and interactivity.
 
 ## Author
 **Moshood Owolabi** – Designed and developed this stopwatch app.
